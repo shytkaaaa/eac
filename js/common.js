@@ -80,7 +80,7 @@ $(document).ready(function() {
 	//Документация: http://api.jquery.com/jquery.ajax/
 	$("#callback").submit(function() {
 		$.ajax({
-			type: "POST",
+			type: "GET",
 			url: "mail.php",
 			data: $("#callback").serialize()
 		}).done(function() {
