@@ -78,23 +78,18 @@ $(document).ready(function() {
 	
 	//Аякс отправка форм
 	//Документация: http://api.jquery.com/jquery.ajax/
-$(document).ready(function() {
- 
-  //E-mail Ajax Send
-  $("#callback").submit(function() { //Change
-    var th = $(this);
-    $.ajax({
-      type: "GET",
-      url: "mail.php", //Change
-      data: th.serialize()
-    }).done(function() {
-      alert("Thank you!");
-      setTimeout(function() {
-        // Done Functions
-        th.trigger("reset");
-      }, 1000);
-    });
-    return false;
-  });
- 
+	$("#callback").submit(function() {
+		$.ajax({
+			type: "GET",
+			url: "mail.php",
+			data: $("#callback").serialize()
+		}).done(function() {
+			alert("Спасибо за заявку!");
+			setTimeout(function() {
+				$.fancybox.close();
+			}, 1000);
+		});
+		return false;
+	});
+
 });
