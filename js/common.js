@@ -79,7 +79,7 @@ $(document).ready(function() {
 	//Аякс отправка форм
 	//Документация: http://api.jquery.com/jquery.ajax/
 	$("#callback").submit(function() {
-		var form_data = $(this).serialize()
+		var form_data = $(this);
 		$.ajax({
 			type: "POST",
 			url: "mail.php",
