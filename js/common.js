@@ -84,7 +84,7 @@ $(document).ready(function() {
   $("#callback").submit(function() { //Change
     var th = $(this);
     $.ajax({
-      type: "POST",
+      type: "GET",
       url: "mail.php", //Change
       data: th.serialize()
     }).done(function() {
