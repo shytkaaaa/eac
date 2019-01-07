@@ -83,7 +83,7 @@ $(document).ready(function() {
 		$.ajax({
 			type: "POST",
 			url: "mail.php",
-			data: form_data
+			data: $("#callback").serialize()
 		}).done(function() {
 			alert("Спасибо за заявку!");
 			setTimeout(function() {
