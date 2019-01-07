@@ -1,8 +1,4 @@
 <?php
-if($_REQUEST['ButtonSend']) {
- //если был использован метод POST
- if($_SERVER['REQUEST_METHOD']=='POST') {
-  if((isset($_POST['text']) && $_POST['text']!="")) {
 
 $recepient = "shutka92_92@mail.ru";
 $sitename = "УЧЕБНЫЙ АДАПТИВНЫЙ САЙТ №1";
