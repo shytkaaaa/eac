@@ -78,10 +78,10 @@ $(document).ready(function() {
 	
 	//Аякс отправка форм
 	//Документация: http://api.jquery.com/jquery.ajax/
-$(#callback).ready(function() {
+$(document).ready(function() {
  
   //E-mail Ajax Send
-  $("form").submit(function() { //Change
+  $("#callback").submit(function() { //Change
     var th = $(this);
     $.ajax({
       type: "POST",
